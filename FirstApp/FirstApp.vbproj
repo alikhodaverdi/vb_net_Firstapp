@@ -65,6 +65,12 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Frm_New_Book.Designer.vb">
+      <DependentUpon>Frm_New_Book.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_New_Book.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Mom.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\Frm_New_Book.resx">
+      <DependentUpon>Frm_New_Book.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mom.resx">
+      <DependentUpon>Mom.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>

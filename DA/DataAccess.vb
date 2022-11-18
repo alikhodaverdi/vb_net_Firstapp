@@ -1,10 +1,11 @@
-﻿Imports DA
-Imports System.Data
+﻿
 Imports System.Data.SqlClient
+
 
 
 Namespace DA
     Public Class DataAccess
+
         Private Con As SqlConnection
         Private Da As SqlDataAdapter
         Private Cmd As SqlCommand
@@ -23,11 +24,23 @@ Namespace DA
             Con.Open()
         End Sub
 
-        Public Sub Unlink()
+        Public Sub UnLik()
             Con.Close()
         End Sub
 
+        Public Function SelectData(ByVal StrSql As String) As DataTable
+            Cmd.CommandText = StrSql
+            DT = New DataTable()
+            Da.Fill(DT)
+            Return DT
+        End Function
+
+        Public Sub CommandText(ByVal StrSql As String)
+            Cmd.CommandText = StrSql
+            Cmd.ExecuteNonQuery()
+        End Sub
 
     End Class
 End Namespace
+
 
