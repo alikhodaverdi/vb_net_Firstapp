@@ -25,6 +25,14 @@ Namespace BL
             Return Output_Q
         End Function
 
+        Public Sub Insertdata()
+            MyBase.Link()
+            Dim Query As String = "insert into Tb_book (ISBN,Title,[Subject],Wirter,Publishers,YearDate,NumPage,Price)values(N'{0}',N'{1}','{2}',N'{3}',N'{4}',N'{5}','{6}','{7}')"
+            Query = String.Format(Query, ISBN)
+
+            MyBase.UnLik()
+        End Sub
+
 
 
     End Class
