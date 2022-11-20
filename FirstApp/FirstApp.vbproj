@@ -11,8 +11,9 @@
     <AssemblyName>FirstApp</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -23,6 +24,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>FirstApp.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +35,7 @@
     <OutputPath>bin\Release\</OutputPath>
     <DocumentationFile>FirstApp.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <OptionExplicit>On</OptionExplicit>
@@ -71,11 +74,23 @@
     <Compile Include="Forms\Frm_New_Book.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Frm_New_User.Designer.vb">
+      <DependentUpon>Frm_New_User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_New_User.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Mom.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Mom.Designer.vb">
       <DependentUpon>Mom.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_Users.Designer.vb">
+      <DependentUpon>Frm_Users.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_Users.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -98,8 +113,14 @@
     <EmbeddedResource Include="Forms\Frm_New_Book.resx">
       <DependentUpon>Frm_New_Book.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_New_User.resx">
+      <DependentUpon>Frm_New_User.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Mom.resx">
       <DependentUpon>Mom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_Users.resx">
+      <DependentUpon>Frm_Users.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -109,6 +130,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

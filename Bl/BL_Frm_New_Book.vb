@@ -23,7 +23,6 @@ Namespace BL
             Dim Output_Q As DataTable = MyBase.SelectData(Query)
             MyBase.UnLik()
             Return Output_Q
-
         End Function
 
 
