@@ -1,0 +1,2 @@
+﻿SELECT Tb_Book.ISBN AS [کد شابک] , dbo.Tb_Book.Title AS [عنوان],Tb_Subject.Subject_Name AS [موضوع] ,dbo.Tb_Book.wirter AS [نویسنده] ,Tb_Book.publishers AS [انتشار],Tb_Book.YearDate AS [تاریخ انتشار] ,dbo.Tb_Book.NumPage AS [تعداد صفحه] ,dbo.Tb_Book.Price AS [قیمت] FROM dbo.Tb_Book,dbo.Tb_Subject
+            WHERE dbo.Tb_Book.[Subject]=Tb_Subject.[Subject] AND dbo.Tb_Book.ISBN ='1'

@@ -49,6 +49,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -62,6 +63,7 @@
   <ItemGroup>
     <Compile Include="BL_Frm_All_Users.vb" />
     <Compile Include="BL_Frm_New_Book.vb" />
+    <Compile Include="BL_Frm_Search.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
