@@ -1,7 +1,6 @@
 ﻿Imports DA.DA
 Imports System.Data.SqlClient
-
-
+Imports System.Windows.Forms
 
 Namespace BL
     Public Class BL_Frm_Edit_Book
@@ -35,6 +34,18 @@ Namespace BL
             MyBase.UnLik()
             Return Output_Q
         End Function
+
+
+        Public Sub UpdateData()
+            MyBase.Link()
+            Dim Query As String = "update Tb_Book set Title=N'{0}',[Subject]=N'{1}',wirter=N'{2}',publishers=N'{3}',YearDate=N'{4}',NumPage='{5}',Price='{6}' where ISBN=N'{7}'"
+            Query = String.Format(Query, Title, Subject, Wirter, Publishers, YearDate, NumPage, Price, ISBN)
+
+            MyBase.CommandText(Query)
+            MyBase.UnLik()
+            MessageBox.Show("Updated !")
+        End Sub
+
     End Class
 
 

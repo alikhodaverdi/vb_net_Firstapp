@@ -52,6 +52,14 @@ Namespace BL
 
         End Function
 
+        Public Sub DeleteData()
+            MyBase.Link()
+            Dim Query As String = "DELETE from Tb_Book  where ISBN ='{0}'"
+            Query = String.Format(Query, Isbn)
+            MyBase.CommandText(Query)
+            MyBase.UnLik()
+        End Sub
+
     End Class
 End Namespace
 
