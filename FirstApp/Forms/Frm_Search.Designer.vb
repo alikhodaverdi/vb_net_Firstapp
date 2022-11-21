@@ -27,6 +27,8 @@ Partial Class Frm_Search
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Selectitem = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.Deleteitem = New System.Windows.Forms.DataGridViewButtonColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -75,12 +77,32 @@ Partial Class Frm_Search
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Selectitem, Me.Deleteitem})
         Me.DataGridView1.Location = New System.Drawing.Point(12, 88)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.DataGridView1.RowHeadersWidth = 10
         Me.DataGridView1.Size = New System.Drawing.Size(605, 313)
         Me.DataGridView1.TabIndex = 11
+        '
+        'Selectitem
+        '
+        Me.Selectitem.HeaderText = "نمایش اطلاعات"
+        Me.Selectitem.Name = "Selectitem"
+        Me.Selectitem.ReadOnly = True
+        Me.Selectitem.Text = "نمایش"
+        Me.Selectitem.ToolTipText = "نمایش"
+        Me.Selectitem.UseColumnTextForButtonValue = True
+        '
+        'Deleteitem
+        '
+        Me.Deleteitem.HeaderText = "حذف اطلاعات"
+        Me.Deleteitem.Name = "Deleteitem"
+        Me.Deleteitem.ReadOnly = True
+        Me.Deleteitem.Text = "حذف"
+        Me.Deleteitem.ToolTipText = "حذف"
+        Me.Deleteitem.UseColumnTextForButtonValue = True
         '
         'Frm_Search
         '
@@ -107,4 +129,6 @@ Partial Class Frm_Search
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Selectitem As DataGridViewButtonColumn
+    Friend WithEvents Deleteitem As DataGridViewButtonColumn
 End Class

@@ -68,6 +68,7 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dim Public\VarPublic.vb" />
     <Compile Include="Forms\Frm_New_Book.Designer.vb">
       <DependentUpon>Frm_New_Book.vb</DependentUpon>
     </Compile>
@@ -84,6 +85,12 @@
       <DependentUpon>Frm_Search.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Frm_Search.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_Edit_Book.Designer.vb">
+      <DependentUpon>Frm_Edit_Book.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_Edit_Book.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Mom.vb">
@@ -124,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_Search.resx">
       <DependentUpon>Frm_Search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_Edit_Book.resx">
+      <DependentUpon>Frm_Edit_Book.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Mom.resx">
       <DependentUpon>Mom.vb</DependentUpon>
