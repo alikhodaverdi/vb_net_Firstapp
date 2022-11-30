@@ -1,20 +1,13 @@
 ﻿Imports Bl.BL
 Imports DA
 
-Public Class Frm_Users
+Public Class Frn_Users
+
 
     Private Sub Frm_All_Users(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim M As New BL_Frm_All_Users
 
         DataGridView1.DataSource = M.SelectDataSub()
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
-        Dim Fo3 As New Frn_Users
-        Fo3.ShowDialog()
-
-
     End Sub
 
 

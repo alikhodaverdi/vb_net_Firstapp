@@ -20,7 +20,7 @@ Namespace DA
         End Sub
 
         Public Sub Link()
-            Con.ConnectionString = "Data Source=.;Initial Catalog=DB_FirstApp;Integrated Security=True"
+            Con.ConnectionString = "Data Source=.;Initial Catalog=Beshel_EmptyData;Integrated Security=True"
             Con.Open()
         End Sub
 

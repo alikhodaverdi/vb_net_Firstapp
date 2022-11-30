@@ -93,17 +93,29 @@
     <Compile Include="Forms\Frm_Edit_Book.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Mom.vb">
+    <Compile Include="Forms\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Mom.Designer.vb">
-      <DependentUpon>Mom.vb</DependentUpon>
+    <Compile Include="Forms\Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Frm_Users.Designer.vb">
       <DependentUpon>Frm_Users.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Frm_Users.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frn_Users.Designer.vb">
+      <DependentUpon>Frn_Users.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frn_Users.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -135,11 +147,17 @@
     <EmbeddedResource Include="Forms\Frm_Edit_Book.resx">
       <DependentUpon>Frm_Edit_Book.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Mom.resx">
-      <DependentUpon>Mom.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Frm_Users.resx">
       <DependentUpon>Frm_Users.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frn_Users.resx">
+      <DependentUpon>Frn_Users.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

@@ -31,18 +31,20 @@ Partial Class Frm_Users
         '
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader
+        Me.DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedHeaders
         Me.DataGridView1.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(55, 56)
+        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.DataGridView1.Location = New System.Drawing.Point(0, 91)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(681, 359)
+        Me.DataGridView1.Size = New System.Drawing.Size(800, 359)
         Me.DataGridView1.TabIndex = 0
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(661, 12)
+        Me.Button1.Location = New System.Drawing.Point(690, 26)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 38)
         Me.Button1.TabIndex = 1

@@ -17,7 +17,6 @@ Namespace BL
         Public NumPage As Integer
         Public Price As Integer
 
-
         Public Function SelectDataSub() As DataTable
             MyBase.Link()
             Dim Query As String = "select * from Tb_Subject"
