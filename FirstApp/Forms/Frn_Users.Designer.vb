@@ -48,43 +48,35 @@ Partial Class Frn_Users
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.PersonName = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.PersonNameLatin = New System.Windows.Forms.TextBox()
+        Me.PersonalityCode = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.OwnershipCode = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.ActivityCode = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.PersonIsActive = New System.Windows.Forms.ComboBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.PersonEconomy = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.LevelCode = New System.Windows.Forms.TextBox()
         Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.Label17 = New System.Windows.Forms.Label()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.PersonDetailCode = New System.Windows.Forms.TextBox()
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.Label19 = New System.Windows.Forms.Label()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.ModificationDate = New System.Windows.Forms.TextBox()
         Me.Label20 = New System.Windows.Forms.Label()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
+        Me.PersonShortName = New System.Windows.Forms.TextBox()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.RecordDate = New System.Windows.Forms.TextBox()
         Me.Label24 = New System.Windows.Forms.Label()
-        Me.TextBox16 = New System.Windows.Forms.TextBox()
+        Me.ProviderMemberCode = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -370,12 +362,12 @@ Partial Class Frn_Users
         Me.Button4.Text = "ریست"
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'PersonName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(583, 117)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(124, 20)
-        Me.TextBox1.TabIndex = 19
+        Me.PersonName.Location = New System.Drawing.Point(583, 117)
+        Me.PersonName.Name = "PersonName"
+        Me.PersonName.Size = New System.Drawing.Size(124, 20)
+        Me.PersonName.TabIndex = 19
         '
         'Label8
         '
@@ -401,19 +393,19 @@ Partial Class Frn_Users
         Me.Label9.TabIndex = 28
         Me.Label9.Text = "نام به لاتین"
         '
-        'TextBox2
+        'PersonNameLatin
         '
-        Me.TextBox2.Location = New System.Drawing.Point(583, 163)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(124, 20)
-        Me.TextBox2.TabIndex = 23
+        Me.PersonNameLatin.Location = New System.Drawing.Point(583, 163)
+        Me.PersonNameLatin.Name = "PersonNameLatin"
+        Me.PersonNameLatin.Size = New System.Drawing.Size(124, 20)
+        Me.PersonNameLatin.TabIndex = 23
         '
-        'TextBox3
+        'PersonalityCode
         '
-        Me.TextBox3.Location = New System.Drawing.Point(583, 209)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(124, 20)
-        Me.TextBox3.TabIndex = 29
+        Me.PersonalityCode.Location = New System.Drawing.Point(583, 209)
+        Me.PersonalityCode.Name = "PersonalityCode"
+        Me.PersonalityCode.Size = New System.Drawing.Size(124, 20)
+        Me.PersonalityCode.TabIndex = 29
         '
         'Label10
         '
@@ -427,12 +419,12 @@ Partial Class Frn_Users
         Me.Label10.TabIndex = 30
         Me.Label10.Text = "کد پرسنلی"
         '
-        'TextBox4
+        'OwnershipCode
         '
-        Me.TextBox4.Location = New System.Drawing.Point(453, 117)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(124, 20)
-        Me.TextBox4.TabIndex = 31
+        Me.OwnershipCode.Location = New System.Drawing.Point(453, 117)
+        Me.OwnershipCode.Name = "OwnershipCode"
+        Me.OwnershipCode.Size = New System.Drawing.Size(124, 20)
+        Me.OwnershipCode.TabIndex = 31
         '
         'Label11
         '
@@ -458,32 +450,32 @@ Partial Class Frn_Users
         Me.Label12.TabIndex = 34
         Me.Label12.Text = "کد فعالیت"
         '
-        'TextBox5
+        'ActivityCode
         '
-        Me.TextBox5.Location = New System.Drawing.Point(453, 163)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(124, 20)
-        Me.TextBox5.TabIndex = 33
+        Me.ActivityCode.Location = New System.Drawing.Point(453, 163)
+        Me.ActivityCode.Name = "ActivityCode"
+        Me.ActivityCode.Size = New System.Drawing.Size(124, 20)
+        Me.ActivityCode.TabIndex = 33
         '
         'Label13
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label13.Location = New System.Drawing.Point(483, 186)
+        Me.Label13.Location = New System.Drawing.Point(214, 140)
         Me.Label13.Name = "Label13"
         Me.Label13.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label13.Size = New System.Drawing.Size(84, 20)
         Me.Label13.TabIndex = 35
         Me.Label13.Text = "وضعیت اکانت"
         '
-        'ComboBox1
+        'PersonIsActive
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(456, 209)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 36
+        Me.PersonIsActive.FormattingEnabled = True
+        Me.PersonIsActive.Location = New System.Drawing.Point(196, 163)
+        Me.PersonIsActive.Name = "PersonIsActive"
+        Me.PersonIsActive.Size = New System.Drawing.Size(121, 21)
+        Me.PersonIsActive.TabIndex = 36
         '
         'Label14
         '
@@ -497,50 +489,31 @@ Partial Class Frn_Users
         Me.Label14.TabIndex = 37
         Me.Label14.Text = "اقتصاد "
         '
-        'TextBox6
+        'PersonEconomy
         '
-        Me.TextBox6.Location = New System.Drawing.Point(323, 117)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(124, 20)
-        Me.TextBox6.TabIndex = 38
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label15.Location = New System.Drawing.Point(349, 140)
-        Me.Label15.Name = "Label15"
-        Me.Label15.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Label15.Size = New System.Drawing.Size(90, 20)
-        Me.Label15.TabIndex = 40
-        Me.Label15.Text = "نام کوتاه شخص"
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(325, 163)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(124, 20)
-        Me.TextBox7.TabIndex = 39
+        Me.PersonEconomy.Location = New System.Drawing.Point(323, 117)
+        Me.PersonEconomy.Name = "PersonEconomy"
+        Me.PersonEconomy.Size = New System.Drawing.Size(124, 20)
+        Me.PersonEconomy.TabIndex = 38
         '
         'Label16
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label16.Location = New System.Drawing.Point(367, 186)
+        Me.Label16.Location = New System.Drawing.Point(365, 140)
         Me.Label16.Name = "Label16"
         Me.Label16.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label16.Size = New System.Drawing.Size(51, 20)
         Me.Label16.TabIndex = 43
         Me.Label16.Text = "کد سطح"
         '
-        'TextBox8
+        'LevelCode
         '
-        Me.TextBox8.Location = New System.Drawing.Point(325, 209)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(124, 20)
-        Me.TextBox8.TabIndex = 42
+        Me.LevelCode.Location = New System.Drawing.Point(323, 163)
+        Me.LevelCode.Name = "LevelCode"
+        Me.LevelCode.Size = New System.Drawing.Size(124, 20)
+        Me.LevelCode.TabIndex = 42
         '
         'PictureBox11
         '
@@ -565,12 +538,12 @@ Partial Class Frn_Users
         Me.Label17.TabIndex = 46
         Me.Label17.Text = "کد جزیات شخص"
         '
-        'TextBox9
+        'PersonDetailCode
         '
-        Me.TextBox9.Location = New System.Drawing.Point(195, 117)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(124, 20)
-        Me.TextBox9.TabIndex = 45
+        Me.PersonDetailCode.Location = New System.Drawing.Point(195, 117)
+        Me.PersonDetailCode.Name = "PersonDetailCode"
+        Me.PersonDetailCode.Size = New System.Drawing.Size(124, 20)
+        Me.PersonDetailCode.TabIndex = 45
         '
         'PictureBox12
         '
@@ -582,25 +555,6 @@ Partial Class Frn_Users
         Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox12.TabIndex = 44
         Me.PictureBox12.TabStop = False
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label18.Location = New System.Drawing.Point(219, 140)
-        Me.Label18.Name = "Label18"
-        Me.Label18.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Label18.Size = New System.Drawing.Size(90, 20)
-        Me.Label18.TabIndex = 49
-        Me.Label18.Text = "نام کوتاه شخص"
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(195, 163)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(124, 20)
-        Me.TextBox10.TabIndex = 48
         '
         'PictureBox13
         '
@@ -618,19 +572,19 @@ Partial Class Frn_Users
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label19.Location = New System.Drawing.Point(219, 186)
+        Me.Label19.Location = New System.Drawing.Point(485, 186)
         Me.Label19.Name = "Label19"
         Me.Label19.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label19.Size = New System.Drawing.Size(78, 20)
         Me.Label19.TabIndex = 51
         Me.Label19.Text = "تاریخ اصلاح"
         '
-        'TextBox11
+        'ModificationDate
         '
-        Me.TextBox11.Location = New System.Drawing.Point(195, 209)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(124, 20)
-        Me.TextBox11.TabIndex = 50
+        Me.ModificationDate.Location = New System.Drawing.Point(453, 209)
+        Me.ModificationDate.Name = "ModificationDate"
+        Me.ModificationDate.Size = New System.Drawing.Size(124, 20)
+        Me.ModificationDate.TabIndex = 50
         '
         'Label20
         '
@@ -644,88 +598,50 @@ Partial Class Frn_Users
         Me.Label20.TabIndex = 53
         Me.Label20.Text = "نام کوتاه شخص"
         '
-        'TextBox12
+        'PersonShortName
         '
-        Me.TextBox12.Location = New System.Drawing.Point(63, 117)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(124, 20)
-        Me.TextBox12.TabIndex = 52
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label21.Location = New System.Drawing.Point(87, 140)
-        Me.Label21.Name = "Label21"
-        Me.Label21.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Label21.Size = New System.Drawing.Size(90, 20)
-        Me.Label21.TabIndex = 55
-        Me.Label21.Text = "نام کوتاه شخص"
-        '
-        'TextBox13
-        '
-        Me.TextBox13.Location = New System.Drawing.Point(63, 163)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(124, 20)
-        Me.TextBox13.TabIndex = 54
+        Me.PersonShortName.Location = New System.Drawing.Point(63, 117)
+        Me.PersonShortName.Name = "PersonShortName"
+        Me.PersonShortName.Size = New System.Drawing.Size(124, 20)
+        Me.PersonShortName.TabIndex = 52
         '
         'Label22
         '
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label22.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label22.Location = New System.Drawing.Point(87, 186)
+        Me.Label22.Location = New System.Drawing.Point(365, 186)
         Me.Label22.Name = "Label22"
         Me.Label22.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label22.Size = New System.Drawing.Size(61, 20)
         Me.Label22.TabIndex = 57
         Me.Label22.Text = "تاریخ ثبت"
         '
-        'TextBox14
+        'RecordDate
         '
-        Me.TextBox14.Location = New System.Drawing.Point(63, 209)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(124, 20)
-        Me.TextBox14.TabIndex = 56
-        '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label23.Location = New System.Drawing.Point(616, 232)
-        Me.Label23.Name = "Label23"
-        Me.Label23.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Label23.Size = New System.Drawing.Size(61, 20)
-        Me.Label23.TabIndex = 59
-        Me.Label23.Text = "تاریخ ثبت"
-        '
-        'TextBox15
-        '
-        Me.TextBox15.Location = New System.Drawing.Point(583, 255)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(124, 20)
-        Me.TextBox15.TabIndex = 58
+        Me.RecordDate.Location = New System.Drawing.Point(323, 209)
+        Me.RecordDate.Name = "RecordDate"
+        Me.RecordDate.Size = New System.Drawing.Size(124, 20)
+        Me.RecordDate.TabIndex = 56
         '
         'Label24
         '
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label24.Location = New System.Drawing.Point(483, 232)
+        Me.Label24.Location = New System.Drawing.Point(100, 140)
         Me.Label24.Name = "Label24"
         Me.Label24.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label24.Size = New System.Drawing.Size(56, 20)
         Me.Label24.TabIndex = 61
         Me.Label24.Text = "کد معرف"
         '
-        'TextBox16
+        'ProviderMemberCode
         '
-        Me.TextBox16.Location = New System.Drawing.Point(450, 255)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(124, 20)
-        Me.TextBox16.TabIndex = 60
+        Me.ProviderMemberCode.Location = New System.Drawing.Point(63, 163)
+        Me.ProviderMemberCode.Name = "ProviderMemberCode"
+        Me.ProviderMemberCode.Size = New System.Drawing.Size(124, 20)
+        Me.ProviderMemberCode.TabIndex = 60
         '
         'Frn_Users
         '
@@ -733,47 +649,39 @@ Partial Class Frn_Users
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(928, 557)
         Me.Controls.Add(Me.Label24)
-        Me.Controls.Add(Me.TextBox16)
-        Me.Controls.Add(Me.Label23)
-        Me.Controls.Add(Me.TextBox15)
+        Me.Controls.Add(Me.ProviderMemberCode)
         Me.Controls.Add(Me.Label22)
-        Me.Controls.Add(Me.TextBox14)
-        Me.Controls.Add(Me.Label21)
-        Me.Controls.Add(Me.TextBox13)
+        Me.Controls.Add(Me.RecordDate)
         Me.Controls.Add(Me.Label20)
-        Me.Controls.Add(Me.TextBox12)
+        Me.Controls.Add(Me.PersonShortName)
         Me.Controls.Add(Me.Label19)
-        Me.Controls.Add(Me.TextBox11)
-        Me.Controls.Add(Me.Label18)
-        Me.Controls.Add(Me.TextBox10)
+        Me.Controls.Add(Me.ModificationDate)
         Me.Controls.Add(Me.PictureBox13)
         Me.Controls.Add(Me.Label17)
-        Me.Controls.Add(Me.TextBox9)
+        Me.Controls.Add(Me.PersonDetailCode)
         Me.Controls.Add(Me.PictureBox12)
         Me.Controls.Add(Me.Label16)
-        Me.Controls.Add(Me.TextBox8)
+        Me.Controls.Add(Me.LevelCode)
         Me.Controls.Add(Me.PictureBox11)
-        Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.TextBox6)
+        Me.Controls.Add(Me.PersonEconomy)
         Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.PersonIsActive)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.ActivityCode)
         Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.OwnershipCode)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.PersonalityCode)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.PersonNameLatin)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.PersonName)
         Me.Controls.Add(Me.PictureBox10)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
@@ -831,41 +739,33 @@ Partial Class Frn_Users
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents PersonName As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents PersonNameLatin As TextBox
+    Friend WithEvents PersonalityCode As TextBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents OwnershipCode As TextBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents ActivityCode As TextBox
     Friend WithEvents Label13 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents PersonIsActive As ComboBox
     Friend WithEvents Label14 As Label
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents Label15 As Label
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents PersonEconomy As TextBox
     Friend WithEvents Label16 As Label
-    Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents LevelCode As TextBox
     Friend WithEvents PictureBox11 As PictureBox
     Friend WithEvents Label17 As Label
-    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents PersonDetailCode As TextBox
     Friend WithEvents PictureBox12 As PictureBox
-    Friend WithEvents Label18 As Label
-    Friend WithEvents TextBox10 As TextBox
     Friend WithEvents PictureBox13 As PictureBox
     Friend WithEvents Label19 As Label
-    Friend WithEvents TextBox11 As TextBox
+    Friend WithEvents ModificationDate As TextBox
     Friend WithEvents Label20 As Label
-    Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents Label21 As Label
-    Friend WithEvents TextBox13 As TextBox
+    Friend WithEvents PersonShortName As TextBox
     Friend WithEvents Label22 As Label
-    Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents Label23 As Label
-    Friend WithEvents TextBox15 As TextBox
+    Friend WithEvents RecordDate As TextBox
     Friend WithEvents Label24 As Label
-    Friend WithEvents TextBox16 As TextBox
+    Friend WithEvents ProviderMemberCode As TextBox
 End Class
